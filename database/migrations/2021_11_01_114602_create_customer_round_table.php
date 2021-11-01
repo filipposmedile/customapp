@@ -15,10 +15,6 @@ class CreateCustomerRoundTable extends Migration
     {
         Schema::create('customer_round', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('customer_id')->references('id')->on('customers');
-            $table->foreignId('round_id')->references('id')->on('rounds');
-            $table->boolean('done')->nullable();
-            $table->boolean('paid')->nullable();
             $table->timestamps();
         });
     }
