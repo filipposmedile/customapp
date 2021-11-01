@@ -15,6 +15,7 @@ class CreateRoundsTable extends Migration
     {
         Schema::create('rounds', function (Blueprint $table) {
             $table->id();
+            $table->longText('details');
             $table->timestamps();
         });
     }

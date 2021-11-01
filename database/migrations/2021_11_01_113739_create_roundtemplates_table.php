@@ -16,6 +16,9 @@ class CreateRoundtemplatesTable extends Migration
         Schema::create('roundtemplates', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('name');
+            $table->json('customers');
+            $table->longText('details');
         });
     }
 
