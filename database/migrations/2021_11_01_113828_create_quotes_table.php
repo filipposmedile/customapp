@@ -15,6 +15,7 @@ class CreateQuotesTable extends Migration
     {
         Schema::create('quotes', function (Blueprint $table) {
             $table->id();
+            $table->string('customer_name');
             $table->string('re')->nullable();
             $table->longText('job_description')->nullable();
             $table->json('price')->nullable();
