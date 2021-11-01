@@ -15,6 +15,11 @@ class CreateReceiptsTable extends Migration
     {
         Schema::create('receipts', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('customer_id')->constrained('customers')->nullable();
+            $table->string('customer_name');
+            $table->longText('job_description')->nullable();
+            $table->float('price',8,2);
+            $table->boolean('paid');
             $table->timestamps();
         });
     }
