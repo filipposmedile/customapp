@@ -1,0 +1,21 @@
+$color1: #85cc85;
+$color2: #85c4cc;
+
+nav{
+    background-image: linear-gradient(to right, $color2,white);
+}
+#divider{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+#block-left{
+    max-width: 300px;
+    min-width: 50px;
+    background-color: $color1;
+}
+#block-right{
+    width: 100%;
+}

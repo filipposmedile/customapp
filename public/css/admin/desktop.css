@@ -1,0 +1,23 @@
+nav {
+  background-image: linear-gradient(to right, #85c4cc, white);
+}
+
+#divider {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+#block-left {
+  max-width: 300px;
+  min-width: 50px;
+  background-color: #85cc85;
+}
+
+#block-right {
+  width: 100%;
+}
+
+/*# sourceMappingURL=desktop.css.map */
